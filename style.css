@@ -1,0 +1,75 @@
+/* ClassicalLens — public site theme.
+   Mirrors the app's language: deep warm black, ivory, restrained rose-gold accent,
+   serif display, generous space. Single stylesheet shared by every page. */
+
+:root {
+  --ink: #0E0B0A;
+  --card: #1E1A20;
+  --ivory: #EEE8DD;
+  --muted: #B8B0A4;
+  --faint: #6E675E;
+  --accent: #DBC79E;
+  --hairline: rgba(255, 255, 255, 0.08);
+  --maxw: 720px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--ivory);
+  font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-image: radial-gradient(62% 42% at 50% -6%, rgba(219, 199, 158, 0.10), transparent 70%);
+  background-repeat: no-repeat;
+}
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+header.site { padding: 44px 0 6px; text-align: center; }
+.wordmark {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px; letter-spacing: 0.04em;
+  color: var(--ivory); text-decoration: none;
+}
+.tagline { color: var(--faint); font-size: 13px; margin-top: 6px; font-style: italic; }
+
+h1 { font-family: Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.2; margin: 34px 0 6px; }
+h2 { font-family: Georgia, serif; font-weight: 400; font-size: 22px; margin: 34px 0 10px; }
+.eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; font-weight: 600; }
+.updated { color: var(--faint); font-size: 13px; margin-bottom: 26px; }
+
+p, li { color: var(--muted); }
+a { color: var(--accent); }
+strong { color: var(--ivory); font-weight: 600; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+.lead { color: var(--ivory); font-size: 17px; }
+
+.card {
+  background: var(--card); border: 1px solid var(--hairline);
+  border-radius: 16px; padding: 18px 22px; margin: 18px 0;
+}
+
+hr { border: none; border-top: 1px solid var(--hairline); margin: 40px 0; }
+
+.home-links { display: grid; gap: 12px; margin: 30px 0 8px; }
+.home-links a {
+  display: block; background: var(--card); border: 1px solid var(--hairline);
+  border-radius: 14px; padding: 16px 18px; text-decoration: none; color: var(--ivory);
+  font-weight: 600; transition: border-color 0.2s ease;
+}
+.home-links a:hover { border-color: rgba(219, 199, 158, 0.5); }
+.home-links a span { display: block; color: var(--faint); font-size: 13px; margin-top: 3px; font-weight: 400; }
+
+footer.site {
+  border-top: 1px solid var(--hairline); margin-top: 56px; padding: 26px 0 64px;
+  text-align: center; color: var(--faint); font-size: 13px;
+}
+footer.site a { color: var(--muted); text-decoration: none; margin: 0 10px; }
+footer.site a:hover { color: var(--ivory); }
+
+.back { display: inline-block; margin-top: 10px; color: var(--faint); text-decoration: none; font-size: 13px; }
+.back:hover { color: var(--muted); }
